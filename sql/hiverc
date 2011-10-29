@@ -1,0 +1,18 @@
+i--set hive.cli.print.header=true;
+--set hive.input.format=org.apache.hadoop.hive.ql.io.HiveInputFormat;
+
+add jar file:///home/nexr/sampledata/lib/nexr-platform-analysis-0.1-SNAPSHOT.jar;
+CREATE TEMPORARY FUNCTION nvl AS 'com.nexr.platform.analysis.udf.GenericUDFNVL';
+CREATE TEMPORARY FUNCTION decode AS 'com.nexr.platform.analysis.udf.GenericUDFDecode';
+CREATE TEMPORARY FUNCTION nvl2 AS 'com.nexr.platform.analysis.udf.GenericUDFNVL2';
+CREATE TEMPORARY FUNCTION str_to_date AS 'com.nexr.platform.analysis.udf.UDFStrToDate';
+CREATE TEMPORARY FUNCTION date_format AS 'com.nexr.platform.analysis.udf.UDFDateFormat';
+CREATE TEMPORARY FUNCTION to_char AS 'com.nexr.platform.analysis.udf.UDFToChar';
+CREATE TEMPORARY FUNCTION instr4 AS 'com.nexr.platform.analysis.udf.GenericUDFInstr';
+CREATE TEMPORARY FUNCTION chr AS 'com.nexr.platform.analysis.udf.UDFChr';
+CREATE TEMPORARY FUNCTION last_day AS 'com.nexr.platform.analysis.udf.UDFLastDay';
+CREATE TEMPORARY FUNCTION greatest AS 'com.nexr.platform.analysis.udf.GenericUDFGreatest';
+CREATE TEMPORARY FUNCTION to_number AS 'com.nexr.platform.analysis.udf.GenericUDFToNumber';
+CREATE TEMPORARY FUNCTION trunc AS 'com.nexr.platform.analysis.udf.GenericUDFTrunc';
+CREATE TEMPORARY FUNCTION rank AS 'com.nexr.platform.analysis.udf.GenericUDFRank';
+CREATE TEMPORARY FUNCTION row_number AS 'com.nexr.platform.analysis.udf.GenericUDFRowNumber';
