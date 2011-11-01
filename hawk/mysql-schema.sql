@@ -1,4 +1,10 @@
 #
+# root login
+#
+mysql -u root mysql
+
+
+#
 # user
 #
 create user data;

@@ -1,0 +1,6 @@
+MySQL
+~~~~~
+mysql -udata -pdata1234 dpal
+
+
+
